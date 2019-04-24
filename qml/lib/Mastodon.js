@@ -216,6 +216,7 @@ var MastodonAPI = function(config) {
             var params = 'client_id=' + client_id + '&client_secret=' + client_secret + '&redirect_uri=' + redirect_uri + '&grant_type=authorization_code&code=' + code;
             console.log(params)
             http.open("POST", url, true);
+            console.log("CLIENT ID IS: " + client_id)
 
             // Send the proper header information along with the request
             http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
