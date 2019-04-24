@@ -62,9 +62,9 @@ Page {
             TextField {
                 id: instance
                 focus: true
-                label: qsTr("Enter an Mastodon instance URL")
+                label: qsTr("Enter a Mastodon instance URL")
                 text: "https://"
-                placeholderText: "https://mastodon.social"
+                placeholderText: "https://niu.moe"
                 width: parent.width
                 validator: RegExpValidator { regExp: /^(ftp|http|https):\/\/[^ "]+$/ }
                 EnterKey.enabled: instance.acceptableInput;
@@ -195,4 +195,3 @@ Page {
         }
     }
 }
-
